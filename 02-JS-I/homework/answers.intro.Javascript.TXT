@@ -1,0 +1,25 @@
+Variables
+Una variable es como una cajita en la cual se inserta algo (un dato) que puedo utilizar más adelante.
+
+Strings
+Los Strings son letras, textos, carácteres de cualquier idioma y se deben colocar entre comillas simples o dobles (' ', " ")
+
+Funciones (argumentos, return)
+Las funciones son códigos que escribimos para realizar una función en concreto, esta puede o no retornar un valor (return).
+
+A las funciones le podemos pasar un argumento que es un valor que se le da cuando es invocada la función. Por ejemplo,
+si tengo la función "function suma (a, b) { ... }" y la invoco: "suma (3, 4)" le debo colocar un valor que quiero que calcule, en este caso 
+serían los números 3 y 4 los argumentos. 
+
+Return es una keyword que se utiliza para detener la ejecución de la función en la qu ese encuentra y determina un valor que nos va a retornar
+cuando invoquemos la función.
+
+
+Declaraciones if
+If es una keyword condicional que permite evaluar dos condiciones para saber si estas se cumplen o no.
+
+
+Valores booleanos (true, false)
+Son valores que tienen solo dos opciones: o es verdad (true)  o es falso (false). Permiten identificar si en una expresión se cumple o 
+no una condición, mostrando si se cumple la condición "true" o false en caso de no cumplirse. 
+Se utiliza el if para declarar una condición y poder compararla.
