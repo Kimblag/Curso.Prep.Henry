@@ -1,0 +1,19 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+* `for`
+For es utilizado para repetir una o más instrucciones una cantidad de veces determinada. 
+Lo usamos cuando SABEMOS cuántas veces queremos que se repita.
+
+* `&&`
+El operador lógico && evalúa dos condiciones y sólo será verdadera si ambas condiciones se cumplen. Es como 
+un caminito recto y si estamos parados en el inicio, para ir al final necesitamos recorrerlo en esa dirección recta
+habiendo cumplido ambas condiciones ( en este caso, que pueda caminar y que el camino no tiene obstáculos) siendo verdaderas.
+Si el camino estuviera cortado, yo no podría llegar al final, por lo que la condición de que llegue al final no se cumple y dando como resultado: falso.
+
+`||`
+El OR es otro operador lógico que compara dos condiciones y será sólo falso cuando ambas condiciones sean falsas.
+Tomando el ejemplo anterior, necesito cruzar un camino para ir del inicio al punto final, sólo que en este caso
+tengo dos caminos posibles, y si uno tiene un obstáculo, puedo ir por el otro y viceversa. Siempre voy a llegar al otro lado. La única forma de no llegar al punto final es que ambos caminos estén cortados. 
+
+`!`
+El operador NOT nos devuelve el valor booleano contrario al que le damos. Por ejemplo, si damos un valor verdadero, este nos va a devolver false. Porque niega lo que le decimos.
