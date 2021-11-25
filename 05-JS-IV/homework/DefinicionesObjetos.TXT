@@ -1,0 +1,21 @@
+    * Objetos
+    Son un conjunto de datos relacionados (o funcionalidades). Tienen propiedades (que son variables o características)
+    y métodos (funcionalidades que puede hacer ese objeto). Un ejemplo son las ventanas, formularios y los elementos
+    para el control de estos (botones o casillas de verificación).
+	
+    * Propiedades
+    Las propiedades son las características propias del objeto que tengamos, por ejemplo los títulos de una ventana o 
+    la casilla de verificación de un formulario.
+
+	* Métodos
+    Los métodos son las funciones que puede hacer el objeto. Por ejemplo, hacer click a un botón, abrir para una ventana 
+    y el texto se puede seleccionar por el método "selected()".
+
+	* Bucle `for…in`
+    Es un bucle que permite iterar las propiedades de un objeto para actuar de alguna manera sobre ellas. 
+
+	* Notación de puntos vs notación de corchetes
+    La notación con puntos se utiliza con nombres de propiedades válidos. No puede ser números ni contener carácteres
+    como "-",.
+    La notación en corchete espera una cadena y puede forzar cualquier caracter a serlo [42] === "42".
+    Puede recibir cualquier sentencia de caracter.
