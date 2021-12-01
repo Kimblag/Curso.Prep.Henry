@@ -40,10 +40,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  var newArray = [];
-  newArray = array
-  newArray.push(elemento);
-  return newArray;
+  array.push(elemento);
+  return array;
 }
 
 
@@ -63,8 +61,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  newPalabras = palabras.join(" ");
-return newPalabras;
+  return palabras.join(" ");
 }
 
 
@@ -72,10 +69,11 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-   if (array.includes(elemento) === true){
-     return true;
-   }
-   return false;
+    if (array.includes(elemento)){
+      return true;
+    } else {
+      return false;
+    }
 }
 
 
@@ -83,8 +81,7 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var suma = numeros.reduce (function (a, b) { return a + b} );
-  return suma;
+  return numeros.reduce (function (a, b) { return a + b} );
 }
 
 
@@ -114,7 +111,7 @@ function multiplicarArgumentos() {
   // Escribe tu código aquí:
   if (arguments.length === 0){
     return 0;
-  } if (arguments.length === 1){
+  } else if (arguments.length === 1){
     return 1;
   }
   var producto = 1;
@@ -145,8 +142,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
   if (numeroDeDia === 7 || numeroDeDia === 1){
     return "Es fin de semana";
+  } else {
+    return "Es dia Laboral";
   }
-  return "Es dia Laboral";
 } 
 
 
@@ -156,8 +154,9 @@ function empiezaConNueve(n) {
   //Escribe tu código aquí
   if(n.toString().startsWith("9")) {
     return true;
+  } else {
+    return false;
   }
-  return false;
 }
 
 
@@ -168,8 +167,9 @@ function todosIguales(arreglo) {
   for (var i=0; i < arreglo.length; i++){
     if (arreglo[i] === arreglo[i + 1]){
       return true;
+    } else {
+      return false;
     }
-    return false;
   }
 }
 
@@ -184,8 +184,7 @@ function mesesDelAño(array) {
     if ( array[i] === "Enero" || array [i] === "Marzo" || array[i] === "Noviembre"){
       newArray.push(array[i]);
     }
-    }
-    if (newArray.length === 3){
+  } if (newArray.length === 3){
       return newArray;
     }
     return "No se encontraron los meses pedidos";
@@ -217,7 +216,7 @@ function breakStatement(numero) {
   var arrayNew = [];
   var suma = numero;
   for (var i=0; i < 10; i++){
-    suma = suma + 2;
+    suma += 2;
     if (suma === i) break;
     else {
       arrayNew.push(suma);
@@ -244,7 +243,7 @@ function continueStatement(numero) {
     if (i === 5) {
       continue;
     }
-    suma = suma + 2;
+    suma += 2;
     miArray.push(suma);
   }
   return miArray;
