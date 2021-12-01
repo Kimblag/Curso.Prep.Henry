@@ -7,13 +7,11 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x > y){
     return x;
-  } if (y > x){
+  } else if (y > x){
       return y;
   } else {
-    if ( x === y){
       return x || y;
     }
-  }
   }
 
 
@@ -23,9 +21,10 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18){
     return "Allowed";
-  } 
-  return "Not allowed";
-    }
+  } else {
+    return "Not allowed";
+  }  
+}
   
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
@@ -35,13 +34,11 @@ function conection(status) {
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status === 1){
     return "Online";
-  } else {
-    if (status === 2){
+  } else if (status === 2){
       return "Away";
     } else{
       return "Offline";
     }
-  }
 }
 
 
@@ -52,14 +49,11 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === "aleman"){
-    return "Guten Tag!";
-  }if (idioma === "mandarin"){
-    return "Ni Hao!";
-  } if (idioma === "ingles"){
-    return "Hello!";
-  } else {
-    return "Hola!";
+  switch(idioma){
+    case "aleman": return "Guten Tag!";
+    case "mandarin": return "Ni Hao!";
+    case "ingles": return "Hello!";
+    default: return "Hola!";
   }
 }
 
@@ -124,15 +118,13 @@ function fizzBuzz(numero) {
   // De lo contrario, devuelve el numero
   if (numero % 15 === 0){
     return "fizzbuzz";
-  } else {
-    if (numero % 3 === 0){
+  } else if (numero % 3 === 0){
       return "fizz";
-    } else{
-      if (numero % 5 === 0){
+    } else if (numero % 5 === 0){
         return "buzz";
+      } else {
+        return numero;
       }
-    } return numero;
-  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -144,14 +136,13 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
   if (num1 < 0 || num2 < 0 || num3 < 0){
     return "Hay negativos";
-  } if (num1 === 0 || num2 === 0 || num3 === 0){
+  } else if (num1 === 0 || num2 === 0 || num3 === 0){
     return "Error";
-  } if (num1 > num2 && num1 > num3 && num1 > 0){
+  } else if (num1 > num2 && num1 > num3 && num1 > 0){
   return "Número 1 es mayor y positivo";
   }  if (num3 > num2 && num3 > num1){
     return num3 + 1;
-  }
-  else {
+  } else {
     return false;
   }
 }
@@ -163,14 +154,15 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero < 2 ) return false;
-  if ( numero === 2 ) return true; 
-  for (var i = 2; i < numero; i++) {
+  if (numero < 2 ) {
+    return false;
+  } else if ( numero === 2 ) {
+    return true;
+  } for (var i = 2; i < numero; i++) {
     if (numero % i === 0) {
       return false ;
   }
-}
-  return true;
+} return true;
 }
 
  // Primero establezco que si el número es menor que 2, que es primo, (0, 1 y negativos no aplica) no los evalúe.
@@ -186,15 +178,18 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if (valor === true) return "Soy verdadero";
-  if (valor === false) return "Soy falso";
+  if (valor === true) {
+    return "Soy verdadero";
+  } else {
+    return "Soy falso";
+  }
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  const tabla = [];
+  var tabla = [];
   for (var i = 0 ; i <= 10 ; i++){
     tabla.push(i*6);
   }
@@ -216,10 +211,10 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   var i = 0;
     do {
-    numero = numero + 5;
+    numero += 5;
     i++;
   } while (i < 8);
-  return numero
+  return numero;
 }
 
 
