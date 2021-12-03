@@ -1,0 +1,28 @@
+h1 {
+    color:palevioletred
+}
+img {
+    width: 400px;
+    height: 250px;
+}
+#thirdDiv {
+    width: 500px;
+    height: 600px;
+    background-color: whitesmoke;
+    padding: 50px;
+    border: lightslategray 5px double;
+    margin: auto;
+}
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
+body {
+    background-image: url("https://www.sri.inf.ethz.ch/assets/projects/programming.png");
+}
+.Contenedor {
+    justify-content: center;
+    text-align: center;
+
+    
+}
